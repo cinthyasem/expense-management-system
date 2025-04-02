@@ -1,4 +1,4 @@
-name: Export Power Platform Solution
+name: Export and Unpack Solution
 
 on:
   workflow_dispatch:
@@ -8,16 +8,35 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Install Power Platform CLI manually
-      shell: pwsh
-      run: |
-        dotnet tool install --global Microsoft.PowerApps.CLI.Tool
-        echo "$env:USERPROFILE\\.dotnet\\tools" | Out-File -Append -FilePath $env:GITHUB_PATH
+      - name: Install Power Platform CLI
+        run: dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 
-    - name: Export Solution
-      run: |
-        pac auth create --environment "${{ secrets.POWERPLATFORM_URL }}" --applicationId "${{ secrets.APP_ID }}" --clientSecret "${{ secrets.CLIENT_SECRET }}" --tenant "${{ secrets.TENANT_ID }}"
-        pac solution export --name ExpenseManagmentSystem --path out/ExpenseManagmentSystem.zip
+      - name: Authenticate with PAC CLI
+        run: |
+          pac auth create --environment "${{ secrets.POWERPLATFORM_URL }}" `
+                          --applicationId "${{ secrets.CLIENT_ID }}" `
+                          --clientSecret "${{ secrets.CLIENT_SECRET }}" `
+                          --tenant "${{ secrets.TENANT_ID }}"
+
+      - name: Export solution
+        run: |
+          pac solution export --name ExpenseManagmentSystem `
+                              --path out/ExpenseManagmentSystem.zip
+
+      - name: Unpack solution
+        uses: microsoft/powerplatform-actions/unpack-solution@v1
+        with:
+          solution-file: out/ExpenseManagmentSystem.zip
+          solution-folder: unpacked/ExpenseManagmentSystem
+          solution-type: Unmanaged
+
+      - name: Commit unpacked solution
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add unpacked/ExpenseManagmentSystem
+          git commit -m "Unpacked Power Platform solution"
+          git push
