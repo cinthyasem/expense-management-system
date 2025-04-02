@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            
       - name: Install Power Platform CLI manually
         shell: pwsh
         run: |
