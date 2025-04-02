@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{254f63f7-e2d9-ef11-a730-6045bd00ca75}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{41575742-4c3c-4b58-921e-9b964ba9a92f}" showlabel="false" name="New Tab" labelid="{6273b68d-805f-4ce9-a0a3-076f894ef514}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{73058753-2ec8-4e19-8813-6328cf368621}" name="tab_1_column_1_section_1" labelid="{78fbadc1-76cf-48a9-85c3-98c5e6e8b218}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{34cd3f37-8418-4cbf-99db-0796f05c733c}" labelid="{62793841-0379-4045-a6a0-9d86d8a39e1a}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="nw_title" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="nw_title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2dc056b0-c94e-41d0-9b5b-7bcb276132dc}" locklevel="0" colspan="1" rowspan="1" labelid="{b501f876-da34-42d6-a27c-63aec745b376}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="nw_description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="nw_description" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{5a949824-d90b-439a-84f9-e512f9f3ff7a}" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{2f88f041-3904-419a-8ac3-2f7eedda39ae}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aeea7648-8aca-4c85-941e-af809496733b}" labelid="{3ac7c295-ea3a-4374-a764-b21f13516110}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{810e54dd-46cd-430e-b310-49c22ec4fb5c}" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{6ee45335-29cf-4c4f-8093-2639ba67499f}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{241580e6-af4c-4545-bc4e-0246d0159be4}" labelid="{1696ec94-69a1-4281-a0f5-f79ed4e186bf}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Expense Request quick create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

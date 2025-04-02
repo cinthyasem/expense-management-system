@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1730a27e-9dda-ef11-a730-6045bd00ca75}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{78f13ad6-ce62-45a3-af67-8fb9cd1be8a9}" showlabel="false" name="New Tab" labelid="{181ceb57-a271-40fa-aa2b-eae7f26a2d89}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{ffb13204-2100-4d45-92a0-8c17e182892b}" name="New Section" labelid="{38e7228a-8835-4873-b1bc-4748ac910905}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row></row>
+                    <row>
+                      <cell id="{e169381f-347a-4be0-ac69-347cf1117e89}" locklevel="0" colspan="1" rowspan="1" labelid="{d2fe4139-0701-47d1-a831-ffcbebd24a34}">
+                        <labels>
+                          <label description="Primary Email" languagecode="1033" />
+                          <label description="Correo electrónico principal" languagecode="3082" />
+                        </labels>
+                        <control id="internalemailaddress" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="internalemailaddress" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{368cb9b0-aeb5-462c-bbe3-e11a93d50e48}" locklevel="0" colspan="1" rowspan="1" labelid="{98f15b5e-2711-46b4-8f8c-513a22c4bc7b}">
+                        <labels>
+                          <label description="Manager" languagecode="1033" />
+                          <label description="Administrador" languagecode="3082" />
+                        </labels>
+                        <control id="parentsystemuserid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="parentsystemuserid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="quick view form for Expense request" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

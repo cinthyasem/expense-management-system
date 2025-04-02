@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{101105d1-4cd8-ef11-a730-6045bd00ca75}</connectionroleid>
+      <name>Wife</name>
+      <category>2</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{161105d1-4cd8-ef11-a730-6045bd00ca75}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>contact</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{cada7904-4fd8-ef11-a730-6045bd00ca75}</connectionroleid>
+      <name>Husband</name>
+      <category>2</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{d3da7904-4fd8-ef11-a730-6045bd00ca75}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>contact</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+  <ConnectionRoleAssociations>
+    <ConnectionRoleAssociation>
+      <connectionroleid>{101105d1-4cd8-ef11-a730-6045bd00ca75}</connectionroleid>
+      <associatedconnectionroleid>{cada7904-4fd8-ef11-a730-6045bd00ca75}</associatedconnectionroleid>
+    </ConnectionRoleAssociation>
+  </ConnectionRoleAssociations>
+</ConnectionRoles>

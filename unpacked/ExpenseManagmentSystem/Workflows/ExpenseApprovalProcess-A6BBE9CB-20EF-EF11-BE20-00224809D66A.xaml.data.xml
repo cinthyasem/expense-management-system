@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{a6bbe9cb-20ef-ef11-be20-00224809d66a}" Name="Expense Approval Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ExpenseApprovalProcess-A6BBE9CB-20EF-EF11-BE20-00224809D66A.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>nw_expenseapprovalprocess</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>nw_ExpeseRequest</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Expense Approval Process" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{558edce9-dc3f-474b-8d95-45a6e4bf00ea}">
+      <label languagecode="1033" description="Data Capture" />
+    </steplabels>
+    <steplabels id="{e0559536-8965-4245-be16-0caef43cf8bf}">
+      <label languagecode="1033" description="Title" />
+    </steplabels>
+    <steplabels id="{4a10ce7f-645f-4a5e-b81f-88beeb01db07}">
+      <label languagecode="1033" description="Have you entered Expense Items?" />
+    </steplabels>
+    <steplabels id="{e76cfcb2-5be4-467d-9000-0d6678dbc928}">
+      <label languagecode="1033" description="Are Documents Uploaded?" />
+    </steplabels>
+    <steplabels id="{f80e3dd7-1596-4024-9f2e-39d7c90f0e80}">
+      <label languagecode="1033" description="Review" />
+    </steplabels>
+    <steplabels id="{569af4b5-a7a9-4b50-ab7b-6e5547992dd8}">
+      <label languagecode="1033" description="Description" />
+    </steplabels>
+    <steplabels id="{4ca92dff-8978-4b97-b9d0-7cb497e4e243}">
+      <label languagecode="1033" description="Approval " />
+    </steplabels>
+    <steplabels id="{d50114b2-d0db-4531-9e38-0757a99d0e59}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+  </labels>
+</Workflow>

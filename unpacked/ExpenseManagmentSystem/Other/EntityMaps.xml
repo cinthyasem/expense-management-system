@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityMap>
+    <EntitySource>nw_expeserequest</EntitySource>
+    <EntityTarget>nw_expenseitem</EntityTarget>
+    <AttributeMaps>
+      <AttributeMap>
+        <AttributeSource>nw_title</AttributeSource>
+        <AttributeTarget>nw_title</AttributeTarget>
+      </AttributeMap>
+    </AttributeMaps>
+  </EntityMap>
+</EntityMaps>

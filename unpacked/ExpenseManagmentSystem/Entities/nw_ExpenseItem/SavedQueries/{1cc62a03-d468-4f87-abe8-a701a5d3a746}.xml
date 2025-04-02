@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1cc62a03-d468-4f87-abe8-a701a5d3a746}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nw_title" select="1" icon="1" preview="1">
+        <row name="result" id="nw_expenseitemid">
+          <cell name="nw_title" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nw_expenseitem">
+          <attribute name="nw_expenseitemid" />
+          <attribute name="nw_title" />
+          <attribute name="createdon" />
+          <order attribute="nw_title" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Expense Items" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

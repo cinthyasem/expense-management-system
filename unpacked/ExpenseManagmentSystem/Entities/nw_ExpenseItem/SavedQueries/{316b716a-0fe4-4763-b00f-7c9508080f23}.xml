@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{316b716a-0fe4-4763-b00f-7c9508080f23}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nw_title" select="1" icon="1" preview="1">
+        <row name="result" id="nw_expenseitemid">
+          <cell name="nw_title" width="162" />
+          <cell name="createdon" width="125" />
+          <cell name="nw_itemamount" width="113" />
+          <cell name="nw_itemamount_base" width="120" />
+          <cell name="nw_expeserequest" width="121" />
+          <cell name="nw_expensetype" width="119" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nw_expenseitem">
+          <attribute name="nw_expenseitemid" />
+          <attribute name="nw_title" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="nw_itemamount" />
+          <attribute name="nw_itemamount_base" />
+          <attribute name="nw_expeserequest" />
+          <attribute name="nw_expensetype" />
+          <order attribute="nw_title" descending="false" />
+          <order attribute="createdon" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Expense Items" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

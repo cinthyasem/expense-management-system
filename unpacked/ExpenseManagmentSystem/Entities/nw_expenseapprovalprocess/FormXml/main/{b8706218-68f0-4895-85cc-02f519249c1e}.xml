@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b8706218-68f0-4895-85cc-02f519249c1e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{558edce9-dc3f-474b-8d95-45a6e4bf00ea}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{0875b00d-8b8d-4e0f-9965-84baeffc142d}">
+          <labels>
+            <label description="Data Capture" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{72320a7d-8c5f-4905-5017-a9798ff869ae}" name="StageStep3_section1" labelid="{bef935b1-43e0-4bd1-b504-70f182f1dcd8}">
+                  <labels>
+                    <label description="Data Capture" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e0559536-8965-4245-be16-0caef43cf8bf}" showlabel="true" visible="true" labelid="{8a68c246-e3d9-4a54-93f0-78fb768a3226}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_nw_expeserequest_nw_expenseapprovalprocess:nw_title" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="nw_title" disabled="false" relationship="bpf_nw_expeserequest_nw_expenseapprovalprocess" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a10ce7f-645f-4a5e-b81f-88beeb01db07}" showlabel="true" visible="true" labelid="{8e45cad4-bf85-4c71-8bd8-12581b4acb94}">
+                        <labels>
+                          <label description="Have you entered Expense Items?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_nw_expeserequest_nw_expenseapprovalprocess:nw_expenseitemsentered" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="nw_expenseitemsentered" relationship="bpf_nw_expeserequest_nw_expenseapprovalprocess" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e76cfcb2-5be4-467d-9000-0d6678dbc928}" showlabel="true" visible="true" labelid="{ab1d60f4-50b8-4e2d-adc1-a0a508cc7114}">
+                        <labels>
+                          <label description="Are Documents Uploaded?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_nw_expeserequest_nw_expenseapprovalprocess:nw_documentsuploaded" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="nw_documentsuploaded" relationship="bpf_nw_expeserequest_nw_expenseapprovalprocess" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{f80e3dd7-1596-4024-9f2e-39d7c90f0e80}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{a3ee15c9-815c-449a-9d88-1f19746cd53a}">
+          <labels>
+            <label description="Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{ad108d06-8d93-da42-c680-b823637ef683}" name="StageStep11_section1" labelid="{497cde21-6b6c-4c79-98a8-d19ff50a9a46}">
+                  <labels>
+                    <label description="Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{569af4b5-a7a9-4b50-ab7b-6e5547992dd8}" showlabel="true" visible="true" labelid="{36632ad4-d71b-4945-8365-dbea686d4300}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_nw_expeserequest_nw_expenseapprovalprocess:nw_description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="nw_description" disabled="false" relationship="bpf_nw_expeserequest_nw_expenseapprovalprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{4ca92dff-8978-4b97-b9d0-7cb497e4e243}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{a0dcd400-d55d-4126-9f46-626d1eab712c}">
+          <labels>
+            <label description="Approval " languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{3f466634-20d4-c91c-6507-43c6b89beb84}" name="StageStep15_section1" labelid="{e5dc4576-8db4-45b2-980e-634cca8b2159}">
+                  <labels>
+                    <label description="Approval " languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d50114b2-d0db-4531-9e38-0757a99d0e59}" showlabel="true" visible="true" labelid="{23785185-8200-4b67-acbc-84b6ee8bfe01}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_nw_expeserequest_nw_expenseapprovalprocess:statecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statecode" disabled="false" relationship="bpf_nw_expeserequest_nw_expenseapprovalprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
