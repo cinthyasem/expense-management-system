@@ -15,8 +15,9 @@ jobs:
       uses: microsoft/powerplatform-actions/actions-install@v1
 
     - name: Add Power Platform CLI to PATH
+      shell: pwsh
       run: |
-        echo "##[add-path]$env:USERPROFILE\\AppData\\Local\\Microsoft\\PowerAppsCLI" >> $env:GITHUB_ENV
+        echo "$env:USERPROFILE\\AppData\\Local\\Microsoft\\PowerAppsCLI" | Out-File -Append -FilePath $env:GITHUB_PATH
 
     - name: Export Solution
       uses: microsoft/powerplatform-actions/export-solution@v1
