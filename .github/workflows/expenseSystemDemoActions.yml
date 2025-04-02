@@ -1,4 +1,4 @@
-name: Export, Unpack, and Publish Power Platform Solution
+name: Export Power Platform Solution
 
 on:
   workflow_dispatch:
@@ -14,6 +14,10 @@ jobs:
     - name: Install Power Platform Tools
       uses: microsoft/powerplatform-actions/actions-install@v1
 
+    - name: Add Power Platform CLI to PATH
+      run: |
+        echo "##[add-path]$env:USERPROFILE\\AppData\\Local\\Microsoft\\PowerAppsCLI" >> $env:GITHUB_ENV
+
     - name: Export Solution
       uses: microsoft/powerplatform-actions/export-solution@v1
       with:
@@ -24,26 +28,3 @@ jobs:
         solution-name: ExpenseManagmentSystem
         solution-output-file: out/ExpenseManagmentSystem.zip
         working-directory: out
-
-    - name: Unpack Solution
-      uses: microsoft/powerplatform-actions/unpack-solution@v1
-      with:
-        solution-file: out/ExpenseManagmentSystem.zip
-        solution-folder: out/solutions/ExpenseManagmentSystem
-        solution-type: Unmanaged
-        overwrite-files: true
-
-    - name: Publish Solution
-      uses: microsoft/powerplatform-actions/publish-solution@v1
-      with:
-        environment-url: ${{ secrets.POWERPLATFORM_URL }}
-        tenant-id: ${{ secrets.TENANT_ID }}
-        app-id: ${{ secrets.APP_ID }}
-        client-secret: ${{ secrets.CLIENT_SECRET }}
-
-    - name: Prepare solution changes for check-in into source control
-      uses: microsoft/powerplatform-actions/branch-solution@v1
-      with:
-        solution-folder: out/solutions/ExpenseManagmentSystem
-        solution-target-folder: src/solutions/ExpenseManagmentSystem
-        token: ${{ secrets.GITHUB_TOKEN }}
