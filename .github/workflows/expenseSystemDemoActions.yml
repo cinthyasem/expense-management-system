@@ -8,23 +8,42 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Install Power Platform CLI
-        run: |
-          dotnet tool install --global Microsoft.PowerApps.CLI.Tool
-          echo "C:\Users\runneradmin\.dotnet\tools" >> $GITHUB_PATH
+    - name: Install Power Platform Tools
+      uses: microsoft/powerplatform-actions/actions-install@v1
 
-      - name: Export Solution
-        run: |
-          pac auth create --environment "${{ secrets.POWERPLATFORM_URL }}" --username "${{ secrets.USERNAME }}" --password "${{ secrets.PASSWORD }}"
-          pac solution export --name ExpenseManagmentSystem --path out/ExpenseManagmentSystem.zip --overwrite
+    - name: Export Solution
+      uses: microsoft/powerplatform-actions/export-solution@v1
+      with:
+        environment-url: ${{ secrets.POWERPLATFORM_URL }}
+        tenant-id: ${{ secrets.TENANT_ID }}
+        app-id: ${{ secrets.APP_ID }}
+        client-secret: ${{ secrets.CLIENT_SECRET }}
+        solution-name: ExpenseManagmentSystem
+        solution-output-file: out/ExpenseManagmentSystem.zip
+        working-directory: out
 
-      - name: Unpack Solution
-        run: |
-          pac solution unpack --path out/solutions/ExpenseManagmentSystem --zipfile out/ExpenseManagmentSystem.zip --type Unmanaged --overwrite
+    - name: Unpack Solution
+      uses: microsoft/powerplatform-actions/unpack-solution@v1
+      with:
+        solution-file: out/ExpenseManagmentSystem.zip
+        solution-folder: out/solutions/ExpenseManagmentSystem
+        solution-type: Unmanaged
+        overwrite-files: true
 
-      - name: Prepare for source control
-        run: |
-          echo "Solution unpacked and ready for source control."
+    - name: Publish Solution
+      uses: microsoft/powerplatform-actions/publish-solution@v1
+      with:
+        environment-url: ${{ secrets.POWERPLATFORM_URL }}
+        tenant-id: ${{ secrets.TENANT_ID }}
+        app-id: ${{ secrets.APP_ID }}
+        client-secret: ${{ secrets.CLIENT_SECRET }}
+
+    - name: Prepare solution changes for check-in into source control
+      uses: microsoft/powerplatform-actions/branch-solution@v1
+      with:
+        solution-folder: out/solutions/ExpenseManagmentSystem
+        solution-target-folder: src/solutions/ExpenseManagmentSystem
+        token: ${{ secrets.GITHUB_TOKEN }}
