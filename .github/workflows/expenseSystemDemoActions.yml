@@ -17,6 +17,9 @@ jobs:
           dotnet tool install --global Microsoft.PowerApps.CLI.Tool
           echo "$env:USERPROFILE\\.dotnet\\tools" | Out-File -Append -FilePath $env:GITHUB_PATH
 
+      - name: Install Power Platform CLI (GitHub Action)
+        uses: microsoft/powerplatform-actions/actions-install@v1
+
       - name: Authenticate with PAC CLI
         run: pac auth create --environment "${{ secrets.POWERPLATFORM_URL }}" --applicationId "${{ secrets.APP_ID }}" --clientSecret "${{ secrets.CLIENT_SECRET }}" --tenant "${{ secrets.TENANT_ID }}"
 
