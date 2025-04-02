@@ -19,7 +19,7 @@ jobs:
       with:
         environment-url: ${{ secrets.POWERPLATFORM_URL }}
         tenant-id: ${{ secrets.TENANT_ID }}
-        client-id: ${{ secrets.CLIENT_ID }}
+        app-id: ${{ secrets.APP_ID }}
         client-secret: ${{ secrets.CLIENT_SECRET }}
         solution-name: ExpenseManagmentSystem
         solution-output-file: out/ExpenseManagmentSystem.zip
@@ -38,7 +38,7 @@ jobs:
       with:
         environment-url: ${{ secrets.POWERPLATFORM_URL }}
         tenant-id: ${{ secrets.TENANT_ID }}
-        client-id: ${{ secrets.CLIENT_ID }}
+        app-id: ${{ secrets.APP_ID }}
         client-secret: ${{ secrets.CLIENT_SECRET }}
 
     - name: Prepare solution changes for check-in into source control
