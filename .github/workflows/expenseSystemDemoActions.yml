@@ -11,16 +11,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install Power Platform CLI manually
+    - name: Install Power Platform CLI
       run: dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 
     - name: Add CLI to PATH
       run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
+    - name: Authenticate with PAC CLI
+      run: |
+        pac auth create --environment "${{ secrets.POWERPLATFORM_URL }}" --applicationId "${{ secrets.APP_ID }}" --clientSecret "${{ secrets.CLIENT_SECRET }}" --tenant "${{ secrets.TENANT_ID }}" --name githubAuth
+
     - name: Export Solution
       run: |
-        pac auth create --url "${{ secrets.POWERPLATFORM_URL }}" --name githubAuth --clientId "${{ secrets.APP_ID }}" --clientSecret "${{ secrets.CLIENT_SECRET }}" --tenant "${{ secrets.TENANT_ID }}"
-        pac solution export --name ExpenseManagmentSystem --outputFile out/ExpenseManagmentSystem.zip
+        pac solution export --name ExpenseManagmentSystem --path out/ExpenseManagmentSystem.zip --environment "${{ secrets.POWERPLATFORM_URL }}" --overwrite
 
     - name: Unpack Solution
       run: |
