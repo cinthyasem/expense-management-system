@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25024.216" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25024.216" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25024.00216">
+<ImportExportXml version="9.2.25041.248" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25041.248" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25042.00234">
   <SolutionManifest>
     <UniqueName>ExpenseManagmentSystem</UniqueName>
     <LocalizedNames>
@@ -146,13 +146,13 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.2.2501.2501071)">
-          <package appName="AppModule" version="9.2.2501.2501071">AppModuleSolutionAnchor (9.2.2501.2501071)</package>
+        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.2.2502.2502222)">
+          <package appName="AppModule" version="9.2.2502.2502222">AppModuleSolutionAnchor (9.2.2502.2502222)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="bot" displayName="Copilot" solution="PowerVirtualAgents (2025.2.3.16554571)">
+        <Required type="1" schemaName="bot" displayName="Copilot" solution="PowerVirtualAgents (2025.3.3.16787816)">
           <package appName="CCI Bots" version="2024.11.1.15901765">msdynce_CustomerCareIntelligenceBots_Anchor (2024.11.1.15901765)</package>
           <package appName="CCI Bots" version="2024.11.4.16045192">msdynce_CustomerCareIntelligenceBots_Anchor (2024.11.4.16045192)</package>
         </Required>
@@ -165,7 +165,7 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_accountkpiitem" displayName="Account KPI Item" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_accountkpiitem" displayName="Account KPI Item" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
@@ -188,7 +188,7 @@
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentcapacityprofileunit" displayName="Agent Capacity Profile Unit" solution="msdyn_AgentAvailabilityStatus (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_agentcapacityprofileunit" displayName="Agent Capacity Profile Unit" solution="msdyn_AgentAvailabilityStatus (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="OmnichannelAssignment" version="1.3.0.7364">msdyn_OmnichannelAssignment (1.3.0.7364)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
@@ -196,14 +196,14 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentcapacityupdatehistory" displayName="Agent capacity update history" solution="OCBaseURBase (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_agentcapacityupdatehistory" displayName="Agent capacity update history" solution="OCBaseURBase (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentchannelstate" displayName="Agent Channel State" solution="msdyn_AgentAvailabilityStatus (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_agentchannelstate" displayName="Agent Channel State" solution="msdyn_AgentAvailabilityStatus (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="OmnichannelAssignment" version="1.3.0.7364">msdyn_OmnichannelAssignment (1.3.0.7364)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
@@ -211,19 +211,23 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentgroupmembership" displayName="Agent Group Membership" solution="msdyn_AgentGroupManager (1.5.25024.1001)" />
+        <Required type="1" schemaName="msdyn_agentgroupmembership" displayName="Agent Group Membership" solution="msdyn_AgentGroupManager (1.5.25034.1006)" />
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentlanguage" displayName="Agent Language" solution="msdyn_AgentGroupManager (1.5.25024.1001)" />
+        <Required type="1" schemaName="msdyn_agentlanguage" displayName="Agent Language" solution="msdyn_AgentGroupManager (1.5.25034.1006)" />
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentregion" displayName="Agent Region" solution="msdyn_AgentGroupManager (1.5.25024.1001)" />
+        <Required type="1" schemaName="msdyn_agentmatchingcriteria" displayName="Agent Matching Criteria" solution="msdyn_AgentGroupManager (1.5.25034.1006)" />
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_agentstatus" displayName="Agent Status" solution="msdyn_AgentAvailabilityStatus (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_agentregion" displayName="Agent Region" solution="msdyn_AgentGroupManager (1.5.25034.1006)" />
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentstatus" displayName="Agent Status" solution="msdyn_AgentAvailabilityStatus (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="OmnichannelAssignment" version="1.3.0.7364">msdyn_OmnichannelAssignment (1.3.0.7364)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
@@ -244,21 +248,21 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_aicontactsuggestion" displayName="Teams Contact Suggestion by AI" solution="msdyn_Collaboration (9.1.25022.10005)">
+        <Required type="1" schemaName="msdyn_aicontactsuggestion" displayName="Teams Contact Suggestion by AI" solution="msdyn_Collaboration (9.1.25033.10003)">
           <package appName="msdynce_OfficeProductivity" version="9.0.24102.10001">msdynce_OfficeProductivityAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Office Producttivity" version="9.0.24114.10008">msdynce_OfficeProductivityAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_assignmentmap" displayName="Assignment Map" solution="msdyn_SalesRouting (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_assignmentmap" displayName="Assignment Map" solution="msdyn_SalesRouting (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_contactkpiitem" displayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_contactkpiitem" displayName="Contact KPI Item" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
@@ -298,28 +302,28 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_customeremailcommunication" displayName="Customer email communication" solution="SICommon (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_customeremailcommunication" displayName="Customer email communication" solution="SICommon (9.0.25035.10003)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_dailyaccountkpiitem" displayName="Daily Kpis for account" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_dailyaccountkpiitem" displayName="Daily Kpis for account" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_dailycontactkpiitem" displayName="Daily kpis for contact" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_dailycontactkpiitem" displayName="Daily kpis for contact" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_dataanalyticsworkspace" displayName="Data Analytics Workspace" solution="msdyn_DataInsightsAndAnalytics (9.0.25023.1001)">
+        <Required type="1" schemaName="msdyn_dataanalyticsworkspace" displayName="Data Analytics Workspace" solution="msdyn_DataInsightsAndAnalytics (9.0.25035.1003)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="CustomerServiceAnalytics" version="9.0.24102.1002">msdyn_CustomerServiceAnalyticsAnchor (9.0.24102.1002)</package>
           <package appName="Field Service" version="8.8.130.34">FieldService_trial (8.8.130.34)</package>
@@ -329,7 +333,7 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_duplicateleadmapping" displayName="Duplicate Lead Mapping" solution="msdyn_leadhygiene (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_duplicateleadmapping" displayName="Duplicate Lead Mapping" solution="msdyn_leadhygiene (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -383,7 +387,28 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_linkedentityattributevalidity" displayName="Linked Entity Attribute Validity" solution="msdyn_leadhygiene (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_lastagent" displayName="Last Agent" solution="UnifiedRouting (1.5.25034.1006)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
+          <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
+        </Required>
+        <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_lastagent" displayName="Last Agent" solution="UnifiedRouting (1.5.25034.1006)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
+          <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
+        </Required>
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_lastagent" displayName="Last Agent" solution="UnifiedRouting (1.5.25034.1006)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
+          <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_linkedentityattributevalidity" displayName="Linked Entity Attribute Validity" solution="msdyn_leadhygiene (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -418,28 +443,28 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_mostcontacted" displayName="Most Contacted" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_mostcontacted" displayName="Most Contacted" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_mostcontacted" displayName="Most Contacted" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_mostcontacted" displayName="Most Contacted" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_mostcontactedby" displayName="Most Contacted By" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_mostcontactedby" displayName="Most Contacted By" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_mostcontactedby" displayName="Most Contacted By" solution="RelationshipAnalytics (9.0.25024.10001)">
+        <Required type="1" schemaName="msdyn_mostcontactedby" displayName="Most Contacted By" solution="RelationshipAnalytics (9.0.25035.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
@@ -492,21 +517,21 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_ocsitrainingdata" displayName="Training record" solution="OCISBR (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_ocsitrainingdata" displayName="Training record" solution="OCISBR (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_orgchartnode" displayName="Microsoft Orgchart node entity" solution="msdyn_LinkedInExtensions (9.0.24113.10019)">
+        <Required type="1" schemaName="msdyn_orgchartnode" displayName="Microsoft Orgchart node entity" solution="msdyn_LinkedInExtensions (9.0.25036.10041)">
           <package appName="msdyn_SalesIntegrationsAndAddOns" version="9.0.24102.10001">msdyn_SalesIntegrationsAddOns (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Sales Integration &amp; AddOns" version="9.0.24114.10001">msdyn_SalesIntegrationsAddOns (9.0.24114.10001)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_orgchartnode" displayName="Microsoft Orgchart node entity" solution="msdyn_LinkedInExtensions (9.0.24113.10019)">
+        <Required type="1" schemaName="msdyn_orgchartnode" displayName="Microsoft Orgchart node entity" solution="msdyn_LinkedInExtensions (9.0.25036.10041)">
           <package appName="msdyn_SalesIntegrationsAndAddOns" version="9.0.24102.10001">msdyn_SalesIntegrationsAddOns (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Sales Integration &amp; AddOns" version="9.0.24114.10001">msdyn_SalesIntegrationsAddOns (9.0.24114.10001)</package>
         </Required>
@@ -519,21 +544,21 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25024.1001)">
+        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25034.1006)">
           <package appName="UnifiedRoutingPrime" version="1.5.26.151">UnifiedRoutingPrimeAnchor (1.5.26.151)</package>
           <package appName="Unified Routing - Base" version="1.5.26.154">UnifiedRoutingPrimeAnchor (1.5.26.154)</package>
         </Required>
@@ -614,98 +639,98 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_sabackupdiagnostic" displayName="sabackupdiagnostic" solution="msdyn_segment (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_sabackupdiagnostic" displayName="sabackupdiagnostic" solution="msdyn_segment (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_sabackupdiagnostic" displayName="sabackupdiagnostic" solution="msdyn_segment (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_sabackupdiagnostic" displayName="sabackupdiagnostic" solution="msdyn_segment (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesaccelerationinsight" displayName="Sales acceleration insights" solution="msdyn_acceleratedsales (9.1.25024.10001)">
+        <Required type="1" schemaName="msdyn_salesaccelerationinsight" displayName="Sales acceleration insights" solution="msdyn_acceleratedsales (9.1.25041.10002)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salescopilotinsight" displayName="Sales Copilot Insight" solution="msdyn_SalesCopilot (9.1.25024.10006)">
+        <Required type="1" schemaName="msdyn_salescopilotinsight" displayName="Sales Copilot Insight" solution="msdyn_SalesCopilot (9.1.25041.10001)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salescopilotinsight" displayName="Sales Copilot Insight" solution="msdyn_SalesCopilot (9.1.25024.10006)">
+        <Required type="1" schemaName="msdyn_salescopilotinsight" displayName="Sales Copilot Insight" solution="msdyn_SalesCopilot (9.1.25041.10001)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesroutingdiagnostic" displayName="salesroutingdiagnostic" solution="msdyn_segment (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_salesroutingdiagnostic" displayName="salesroutingdiagnostic" solution="msdyn_segment (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesroutingdiagnostic" displayName="salesroutingdiagnostic" solution="msdyn_segment (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_salesroutingdiagnostic" displayName="salesroutingdiagnostic" solution="msdyn_segment (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2502.4001)">
+        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salessuggestion" displayName="Insight" solution="msdyn_acceleratedsales (9.1.25024.10001)">
+        <Required type="1" schemaName="msdyn_salessuggestion" displayName="Insight" solution="msdyn_acceleratedsales (9.1.25041.10002)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salessuggestion" displayName="Insight" solution="msdyn_acceleratedsales (9.1.25024.10001)">
+        <Required type="1" schemaName="msdyn_salessuggestion" displayName="Insight" solution="msdyn_acceleratedsales (9.1.25041.10002)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_sequencetarget" displayName="Sequence Target" solution="msdyn_Sequence (9.1.25022.10001)">
+        <Required type="1" schemaName="msdyn_sequencetarget" displayName="Sequence Target" solution="msdyn_Sequence (9.1.25041.10001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_sequencetarget" displayName="Sequence Target" solution="msdyn_Sequence (9.1.25022.10001)">
+        <Required type="1" schemaName="msdyn_sequencetarget" displayName="Sequence Target" solution="msdyn_Sequence (9.1.25041.10001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -726,21 +751,21 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_suggestionprincipalobjectaccess" displayName="Suggestion Principal Object Access" solution="msdyn_SalesSuggestion (9.1.25024.10001)">
+        <Required type="1" schemaName="msdyn_suggestionprincipalobjectaccess" displayName="Suggestion Principal Object Access" solution="msdyn_SalesSuggestion (9.1.25041.10002)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_swarm" displayName="Swarm" solution="msdyn_Swarming (9.0.25023.1019)">
+        <Required type="1" schemaName="msdyn_swarm" displayName="Swarm" solution="msdyn_Swarming (9.0.25035.2021)">
           <package appName="ServiceExtended" version="9.0.24112.1021">msdyn_ServiceExtendedAnchor (9.0.24112.1021)</package>
           <package appName="Dynamics 365 Service Extended" version="9.0.24114.1025">msdyn_ServiceExtendedAnchor (9.0.24114.1025)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_swarmparticipant" displayName="Swarm participant" solution="msdyn_Swarming (9.0.25023.1019)">
+        <Required type="1" schemaName="msdyn_swarmparticipant" displayName="Swarm participant" solution="msdyn_Swarming (9.0.25035.2021)">
           <package appName="ServiceExtended" version="9.0.24112.1021">msdyn_ServiceExtendedAnchor (9.0.24112.1021)</package>
           <package appName="Dynamics 365 Service Extended" version="9.0.24114.1025">msdyn_ServiceExtendedAnchor (9.0.24114.1025)</package>
         </Required>
@@ -755,7 +780,7 @@
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_taggedrecord" displayName="Tagged Record" solution="msdyn_VivaSalesCore (9.24.25039.2)">
+        <Required type="1" schemaName="msdyn_taggedrecord" displayName="Tagged Record" solution="msdyn_VivaSalesCore (9.25.25072.2)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
@@ -776,7 +801,7 @@
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_unifiedroutingrun" displayName="Routing diagnostic" solution="DecisionEngine (1.3.24125.2002)">
+        <Required type="1" schemaName="msdyn_unifiedroutingrun" displayName="Routing diagnostic" solution="DecisionEngine (1.5.25032.1005)">
           <package appName="ServiceExtended" version="9.0.24112.1021">msdyn_ServiceExtendedAnchor (9.0.24112.1021)</package>
           <package appName="Dynamics 365 Service Extended" version="9.0.24114.1025">msdyn_ServiceExtendedAnchor (9.0.24114.1025)</package>
         </Required>
@@ -805,14 +830,14 @@
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_wkwcolleaguesforcompany" displayName="wkwcolleaguesforcompany" solution="msdyn_connectiongraph (9.3.25024.10001)">
+        <Required type="1" schemaName="msdyn_wkwcolleaguesforcompany" displayName="wkwcolleaguesforcompany" solution="msdyn_connectiongraph (9.3.25035.10002)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_wkwcolleaguesforcontact" displayName="wkwcolleaguesforcontact" solution="msdyn_connectiongraph (9.3.25024.10001)">
+        <Required type="1" schemaName="msdyn_wkwcolleaguesforcontact" displayName="wkwcolleaguesforcontact" solution="msdyn_connectiongraph (9.3.25035.10002)">
           <package appName="msdynce_SalesInsights" version="9.0.24112.10009">msdynce_SalesInsightsAnchor (9.0.24112.10009)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
         </Required>
@@ -847,6 +872,13 @@
           <package appName="Field Service" version="8.8.130.34">FieldService_trial (8.8.130.34)</package>
         </Required>
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workstream_bot_mapping" displayName="Work Stream Bot Mapping" solution="msdyn_ChannelExperienceApp (1.0.25035.1016)">
+          <package appName="ChannelExperienceApps" version="1.0.24112.1006">msdyn_ChannelExperienceAppsAnchor (1.0.24112.1006)</package>
+          <package appName="Dynamics 365 ChannelExperienceApps" version="1.0.24114.1004">msdyn_ChannelExperienceAppsAnchor (1.0.24114.1004)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msfp_survey" displayName="Customer Voice survey" solution="MicrosoftFormsPro (2.0.0.58)">
@@ -1300,8 +1332,8 @@
         <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="correlatedsubjectchanged" displayName="Correlated subject changed" parentSchemaName="email" parentDisplayName="Email" solution="msft_ActivitiesInfra_Extensions (9.2.0.63)">
-          <package appName="msdynce_Activities" version="9.0.25024.250304000">msdynce_EnableUCIByDefault (9.0.25024.250304000)</package>
+        <Required type="2" schemaName="correlatedsubjectchanged" displayName="Correlated subject changed" parentSchemaName="email" parentDisplayName="Email" solution="msft_ActivitiesInfra_Extensions (9.2.0.70)">
+          <package appName="msdynce_Activities" version="9.0.25041.250403000">msdynce_EnableUCIByDefault (9.0.25041.250403000)</package>
           <package appName="ActivitiesInfra Package" version="1.0.0.0">msft_ActivitiesInfra_Anchor (1.0.0.0)</package>
         </Required>
         <Dependent type="29" displayName="Email Not to manager when expense request created" id="{65c53876-57ee-ef11-be20-00224809d66a}" />
@@ -1328,8 +1360,8 @@
         <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="isduplicatesenderunresolved" displayName="Is Duplicate Sender Unresolved" parentSchemaName="email" parentDisplayName="Email" solution="msft_ActivitiesInfra_Extensions (9.2.0.63)">
-          <package appName="msdynce_Activities" version="9.0.25024.250304000">msdynce_EnableUCIByDefault (9.0.25024.250304000)</package>
+        <Required type="2" schemaName="isduplicatesenderunresolved" displayName="Is Duplicate Sender Unresolved" parentSchemaName="email" parentDisplayName="Email" solution="msft_ActivitiesInfra_Extensions (9.2.0.70)">
+          <package appName="msdynce_Activities" version="9.0.25041.250403000">msdynce_EnableUCIByDefault (9.0.25041.250403000)</package>
           <package appName="ActivitiesInfra Package" version="1.0.0.0">msft_ActivitiesInfra_Anchor (1.0.0.0)</package>
         </Required>
         <Dependent type="29" displayName="Email Not to manager when expense request created" id="{65c53876-57ee-ef11-be20-00224809d66a}" />
@@ -1341,14 +1373,14 @@
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="msdyn_name" displayName="Segment name" parentSchemaName="msdyn_segment" parentDisplayName="Segment" solution="msdyn_segment (9.1.2502.4001)">
+        <Required type="2" schemaName="msdyn_name" displayName="Segment name" parentSchemaName="msdyn_segment" parentDisplayName="Segment" solution="msdyn_segment (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="10" schemaName="msdyn_msdyn_segment_account" displayName="msdyn_msdyn_segment_account" parentSchemaName="msdyn_segment" parentDisplayName="Segment" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="msdyn_name" displayName="Segment name" parentSchemaName="msdyn_segment" parentDisplayName="Segment" solution="msdyn_segment (9.1.2502.4001)">
+        <Required type="2" schemaName="msdyn_name" displayName="Segment name" parentSchemaName="msdyn_segment" parentDisplayName="Segment" solution="msdyn_segment (9.1.2504.1001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -1594,6 +1626,13 @@
           <package appName="msdynce_AppCommon" version="9.0.24102.10001">msdynce_AppCommonAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Application Common" version="9.0.24114.10001">msdynce_AppCommonAnchor (9.0.24114.10001)</package>
         </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package appName="msdynce_AppCommon" version="9.0.24102.10001">msdynce_AppCommonAnchor (9.0.24102.10001)</package>
+          <package appName="Dynamics 365 Application Common" version="9.0.24114.10001">msdynce_AppCommonAnchor (9.0.24114.10001)</package>
+        </Required>
         <Dependent type="60" displayName="Profile Web Form (Enhanced)" parentDisplayName="Contact" id="{bddc0100-0dbe-4562-aafe-31d08c8ab506}" />
       </MissingDependency>
       <MissingDependency>
@@ -1602,13 +1641,6 @@
           <package appName="Dynamics 365 Application Common" version="9.0.24114.10001">msdynce_AppCommonAnchor (9.0.24114.10001)</package>
         </Required>
         <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)">
-          <package appName="msdynce_AppCommon" version="9.0.24102.10001">msdynce_AppCommonAnchor (9.0.24102.10001)</package>
-          <package appName="Dynamics 365 Application Common" version="9.0.24114.10001">msdynce_AppCommonAnchor (9.0.24114.10001)</package>
-        </Required>
-        <Dependent type="60" displayName="Invite Web Form" parentDisplayName="Contact" id="{d6190b35-9474-4098-9698-33f6627eb3bf}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Account/Account.Library.js" displayName="msdyn_/Account/Account.Library.js" solution="FieldService (8.8.0.88)">
@@ -1721,7 +1753,7 @@
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="msdyn_SalesOmniChannel/SalesPhoneNumber.Library.js" displayName="msdyn_SalesOmniChannel/SalesPhoneNumber.Library.js" solution="msdyn_SalesOmniChannel (9.1.25024.10001)">
+        <Required type="61" schemaName="msdyn_SalesOmniChannel/SalesPhoneNumber.Library.js" displayName="msdyn_SalesOmniChannel/SalesPhoneNumber.Library.js" solution="msdyn_SalesOmniChannel (9.1.25041.10002)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -1734,14 +1766,14 @@
         <Dependent type="60" displayName="Portal Contact (Enhanced)" parentDisplayName="Contact" id="{c1c97961-2d42-4103-abf8-2fe2bdf38224}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.AddressInputUCI" displayName="Microsoft.AddressInputUCI" solution="BaseCustomControlsCore (9.0.2502.4011)">
-          <package appName="Base Custom Controls" version="9.0.2502.4011">BaseCustomControlsCore (9.0.2502.4011)</package>
+        <Required type="66" schemaName="Microsoft.AddressInputUCI" displayName="Microsoft.AddressInputUCI" solution="BaseCustomControlsCore (9.0.2504.1014)">
+          <package appName="Base Custom Controls" version="9.0.2504.1014">BaseCustomControlsCore (9.0.2504.1014)</package>
         </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2502.4011)">
-          <package appName="Base Custom Controls" version="9.0.2502.4011">BaseCustomControlsCore (9.0.2502.4011)</package>
+        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2504.1014)">
+          <package appName="Base Custom Controls" version="9.0.2504.1014">BaseCustomControlsCore (9.0.2504.1014)</package>
         </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
@@ -1754,7 +1786,7 @@
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="msdyn_SalesOmniChannel.SalesPhoneNumberControl" displayName="msdyn_SalesOmniChannel.SalesPhoneNumberControl" solution="msdyn_SalesOmniChannel (9.1.25024.10001)">
+        <Required type="66" schemaName="msdyn_SalesOmniChannel.SalesPhoneNumberControl" displayName="msdyn_SalesOmniChannel.SalesPhoneNumberControl" solution="msdyn_SalesOmniChannel (9.1.25041.10002)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24102.10002">msdyn_AcceleratedSalesAnchor (9.1.24102.10002)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -1762,7 +1794,7 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
-          <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.17">PowerAppsAppFramework_Anchor (1.0.0.17)</package>
         </Required>
         <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr97d_Expenseapp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="cr97d_Expenseapp" id.settingdefinitionid.uniquename="AppChannel" />
       </MissingDependency>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7ac1d44f-2431-f011-8c4e-000d3a5abe39}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nw_title" select="1" icon="1" preview="1">
+        <row name="result" id="nw_expeserequestid">
+          <cell name="nw_title" width="200" />
+          <cell name="nw_totalamount" width="200" />
+          <cell name="nw_description" width="200" />
+          <cell name="nw_approvaldate" width="200" />
+          <cell name="modifiedon" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="nw_expeserequest">&lt;attribute name="nw_title" /&gt;&lt;attribute name="nw_totalamount" /&gt;&lt;attribute name="nw_description" /&gt;&lt;attribute name="nw_approvaldate" /&gt;&lt;attribute name="modifiedon" /&gt;
+        <attribute name="nw_title" /><attribute name="nw_totalamount" /><attribute name="nw_description" /><attribute name="nw_approvaldate" /><attribute name="modifiedon" /><attribute name="nw_expeserequestid" /><filter type="and"><condition attribute="createdby" operator="eq" value="{22aa4516-5abf-ef11-b8e9-000d3a3b24e7}" uiname="Cinthya Sanchez" uitype="systemuser" /></filter></entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
