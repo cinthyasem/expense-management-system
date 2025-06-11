@@ -44,4 +44,4 @@ jobs:
           git add unpacked/ExpenseManagmentSystem
           git commit -m "Unpacked Power Platform solution"
           git remote set-url origin https://x-access-token:${{ secrets.MY_PAT }}@github.com/${{ github.repository }}
-          git push
+          git push 
